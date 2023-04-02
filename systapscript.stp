@@ -1,0 +1,46 @@
+probe syscall.openat
+{
+  
+  printf ("openat %d\n", pid())
+  
+}
+
+probe syscall.connect 
+{
+      printf ("connect %d\n",  pid())
+}
+
+probe syscall.accept
+{
+      printf ("accept %d\n",  pid())
+}
+
+probe syscall.sendto
+{
+      printf ("sendto %d\n",  pid())
+}
+
+probe syscall.sendmsg
+{
+      printf ("sendmsg %d\n",  pid())
+}
+
+probe syscall.kill
+{
+      printf ("kill %d\n",  pid())
+}
+
+probe syscall.execve
+{
+      printf ("execve %d\n",  pid())
+}
+
+probe syscall.socket
+{
+      printf ("socket %d\n",  pid())
+}
+
+probe syscall.sysinfo
+{
+      printf ("sysinfo %d\n",  pid())
+}
