@@ -1,5 +1,5 @@
 # app
-
+The "process behavior analysis" project aims to study the usual operation of a Linux-type computer to detect unusual behavior that could correspond to a potential security problem.
 ## installation
 
 -   go (le projet à été développé avec la version 1.17) https://go.dev/dl/ (réquis pour compiler le projet pas l'éxecution)
